@@ -10,7 +10,7 @@ namespace ProjektopgaveOOP
         public static void Main(string[] args)
         {
 
-        	Console.WriteLine("Jeg er Elongated")
+        	Console.WriteLine("Jeg er Elongated AS FUCK")
 
             Console.WriteLine("*** VÆRKSTED FOR MEMERS ***");
 
