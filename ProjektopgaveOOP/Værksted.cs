@@ -9,15 +9,9 @@ namespace ProjektopgaveOOP
     {
         public string Oprettelsesdato { get; set; }
 
-
-        //public string Alder { get; set; }
-        //public string Afstammer { get; set; }
-
         //Default constructor
-
         public Værksted()
         {
-
         }
 
         public Værksted(string opretDato)
@@ -28,7 +22,7 @@ namespace ProjektopgaveOOP
         //Metode der kan overrides i nedarvede classer -- denne overrider vores kunder eller Biler class
         public virtual string KundeInformation()
         {
-            return " Dato for oprettelse: " + Oprettelsesdato + " ";
+            return "";
         }
     }
 }

@@ -10,18 +10,18 @@ namespace ProjektopgaveOOP
         public static void Main(string[] args)
         {
             //string Kunde0001 = ("kunde{0}", id);
+            Console.Write("Antal biler ");
+            int antalBiler = Convert.ToInt32(Console.ReadLine());
 
-            Kunder Kunde0001 = new Kunder("Erhverv", "12/12-2010", "Flere biler");
+            Console.Write("Ejer type ");
+            string ejerType =Console.ReadLine();
 
-            //Cat C1 = new Cat("Tigermancat", "42", "Norway'nt", "Meooooooooow");
-            //Fish F1 = new Fish("Sea Linguini", "124", "Sealand");
-            //Bird B1 = new Bird("Eaglebird", "4", "Afrika'nt", "Pipipipipipipipipip");
+            Kunder Kunde1001 = new Kunder(1001, "12/12-2010", antalBiler, ejerType);
+            Kunder Kunde1002 = new Kunder(1002, "01/10-2010", antalBiler, ejerType);
 
-            Console.WriteLine(Kunde0001.Biler);
+            Console.WriteLine(Kunde1001.KundeInformation());
+            Console.WriteLine(Kunde1002.KundeInformation());
 
-            //Console.WriteLine(C1.FuldDyreInfo());
-            //Console.WriteLine(F1.FuldDyreInfo());
-            //Console.WriteLine(B1.FuldDyreInfo());
         }
     }
 }
