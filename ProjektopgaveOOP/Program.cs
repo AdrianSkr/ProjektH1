@@ -10,11 +10,6 @@ namespace ProjektopgaveOOP
     {
         public static void Main(string[] args)
         {
-            List<Kunder> kundeListe = new List<Kunder>();
-            kundeList nyKunde = new kundeList();
-
-            string mydocpath =Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
-
             Console.WriteLine("*** VÆRKSTED FOR MEMERS ***");
 
             Console.WriteLine("Hvad vil du? (dit svar, efterfulgt af 'enter'");
@@ -25,24 +20,8 @@ namespace ProjektopgaveOOP
 
             if(kundeHandling=="K")
             {
-                Console.WriteLine("*** KUNDE LISTE ***");
-                Console.WriteLine("Udksriver til fil: Kundeliste.txt");
-
-                using (StreamWriter outputFile = new StreamWriter(Path.Combine(mydocpath, "WriteLines.txt")))
-                {
-                    outputFile.WriteLine("***KVITTERING***");
-                    foreach (Vare nyvare in minvareliste)
-                    {
-                        outputFile.WriteLine();
-                        outputFile.WriteLine("Du har handlet: " + nyvare.vareAntal + " stk. " + nyvare.vareNavn + ". Til en pris af: " + nyvare.varePris + " kr. pr. stk.");
-                        outputFile.WriteLine("Pris for alle: " + (nyvare.vareAntal * nyvare.varePris) + ".");
-                    }
-
-
+                
             }
-
-
-
 
             Console.Write("Antal biler ");
             int antalBiler = Convert.ToInt32(Console.ReadLine());
