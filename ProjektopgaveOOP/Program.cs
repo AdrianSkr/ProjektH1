@@ -10,6 +10,8 @@ namespace ProjektopgaveOOP
         public static void Main(string[] args)
         {
 
+        	Console.WriteLine("Jeg er Elongated")
+
             Console.WriteLine("*** VÆRKSTED FOR MEMERS ***");
 
             Console.WriteLine("Hvad vil du? (dit svar, efterfulgt af 'enter'");
