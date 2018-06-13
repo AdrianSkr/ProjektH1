@@ -9,7 +9,18 @@ namespace ProjektopgaveOOP
     {
         public static void Main(string[] args)
         {
-            //string Kunde0001 = ("kunde{0}", id);
+
+            Console.WriteLine("*** VÆRKSTED FOR MEMERS ***");
+
+            Console.WriteLine("Hvad vil du? (dit svar, efterfulgt af 'enter'");
+            Console.WriteLine("Se en fuld kundeliste, tryk: K ");
+            Console.WriteLine("Tilføje en kunde til registret, tryk: T ");
+            Console.WriteLine("Slette en kunde fra registret, tryk: S");
+            string kundeHandling = Console.ReadLine().ToLower();
+
+
+
+
             Console.Write("Antal biler ");
             int antalBiler = Convert.ToInt32(Console.ReadLine());
 
