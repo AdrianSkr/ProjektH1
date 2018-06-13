@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.IO;
 using System.Text;
 
 namespace ProjektopgaveOOP
@@ -9,8 +10,10 @@ namespace ProjektopgaveOOP
     {
         public static void Main(string[] args)
         {
+            List<Kunder> kundeListe = new List<Kunder>();
+            kundeList nyKunde = new kundeList();
 
-        	Console.WriteLine("Jeg er Elongated")
+            string mydocpath =Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
 
             Console.WriteLine("*** VÆRKSTED FOR MEMERS ***");
 
@@ -19,6 +22,25 @@ namespace ProjektopgaveOOP
             Console.WriteLine("Tilføje en kunde til registret, tryk: T ");
             Console.WriteLine("Slette en kunde fra registret, tryk: S");
             string kundeHandling = Console.ReadLine().ToLower();
+
+            if(kundeHandling=="K")
+            {
+                Console.WriteLine("*** KUNDE LISTE ***");
+                Console.WriteLine("Udksriver til fil: Kundeliste.txt");
+
+                using (StreamWriter outputFile = new StreamWriter(Path.Combine(mydocpath, "WriteLines.txt")))
+                {
+                    outputFile.WriteLine("***KVITTERING***");
+                    foreach (Vare nyvare in minvareliste)
+                    {
+                        outputFile.WriteLine();
+                        outputFile.WriteLine("Du har handlet: " + nyvare.vareAntal + " stk. " + nyvare.vareNavn + ". Til en pris af: " + nyvare.varePris + " kr. pr. stk.");
+                        outputFile.WriteLine("Pris for alle: " + (nyvare.vareAntal * nyvare.varePris) + ".");
+                    }
+
+
+            }
+
 
 
 
