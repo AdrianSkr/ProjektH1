@@ -37,6 +37,7 @@
     <Compile Include="Værksted.cs" />
     <Compile Include="Kunder.cs" />
     <Compile Include="Biler.cs" />
+    <Compile Include="Tires.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>

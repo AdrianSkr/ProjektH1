@@ -1,23 +1,16 @@
 ﻿//using System;
-//using System.Collections.Generic;
-//using System.Linq;
-//using System.Text;
-
 //namespace ProjektopgaveOOP
 //{
-//    public class Biler:Værksted
+//    public class Tires:Biler
 //    {
-//        public string regNr { get; set; }
-//        public string Mærke { get; set; }
-//        public string modelÅrgang { get; set; }
-//        public string Kilometer { get; set; }
-//        public string Brændstof { get; set; }
-//        public string Interior { get; set; }
+//        public string Brand { get; set; }
+//        public string tireSize { get; set; }
+//        public string tireType { get; set; }
 
 //        //default constructor
-//        public Biler(string opretDato, string flereBiler) : base(opretDato)
+//        public Tires(string opretDato, string flereBiler) : base(opretDato)
 //        {
-//            this.Biler = flereBiler;
+//            this.Brand = flereBiler;
 //        }
 
 //        public Biler(string bilEjerTypeE)

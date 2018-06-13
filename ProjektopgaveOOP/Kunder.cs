@@ -2,11 +2,10 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Data.SqlClient;
 
 namespace ProjektopgaveOOP
 {
-    public class Kunder
+    public class Kunder:Værksted
     {
         public string Biler { get; set; }
         public string Erhvev { get; set; }
