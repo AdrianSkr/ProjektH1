@@ -20,7 +20,6 @@ namespace ProjektopgaveOOP
 
 
 
-
             Console.Write("Antal biler ");
             int antalBiler = Convert.ToInt32(Console.ReadLine());
 
